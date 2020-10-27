@@ -8,8 +8,8 @@ class Client():
         self.doc_id = doc_id
         self.preexistence = []
 
-    """ Adds a preexistence to a client """ 
     def add_preexistence(self, n_preexistence):
+        """ Adds a preexistence to a client """ 
         self.preexistence.append(n_preexistence)
         return len(self.preexistence) - 1
     
