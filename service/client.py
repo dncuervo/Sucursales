@@ -1,5 +1,3 @@
-""" Class representing a client
-    """
 class Client():
 
     def __init__(self, name, last_name, doc_id):
@@ -8,23 +6,22 @@ class Client():
         self.doc_id = doc_id
         self.preexistence = []
 
-    def add_preexistence(self, n_preexistence):
+    def add_preexistence(self, nPreexistence):
         """ Adds a preexistence to a client """ 
-        self.preexistence.append(n_preexistence)
+        self.preexistence.append(nPreexistence)
         return len(self.preexistence) - 1
     
-    """ Adds a preexistence to a client """ 
-    def get_preexistence(self, p_index):
-        if p_index >= len(self.preexistence):
+    def get_preexistence(self, pIndex):
+        if pIndex >= len(self.preexistence):
             return 'There is no such preexistence'
         
-        return self.preexistence[p_index]
+        return self.preexistence[pIndex]
 
     def get_all_preexistence(self):
         return self.preexistence
 
-    def remove_preexistence(self, n_preexistence):
-        self.preexistence.pop(n_preexistence)
+    def remove_preexistence(self, nPreexistence):
+        self.preexistence.pop(nPreexistence)
         return len(self.preexistence) - 1
 
     def get_formatted_name(self):
