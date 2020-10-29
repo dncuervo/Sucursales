@@ -1,4 +1,5 @@
 class Client():
+    """Class representing a Client"""
 
     def __init__(self, name, last_name, doc_id):
         self.name = name
@@ -6,11 +7,11 @@ class Client():
         self.doc_id = doc_id
         self.preexistence = []
 
-    def add_preexistence(self, nPreexistence):
-        """ Adds a preexistence to a client """ 
-        self.preexistence.append(nPreexistence)
+    def add_preexistence(self, n_preexistence):
+        """Adds a preexistence to a client""" 
+        self.preexistence.append(n_preexistence)
         return len(self.preexistence) - 1
-    
+
     def get_preexistence(self, p_index):
         """Get a preexistence given the index"""
         if p_index >= len(self.preexistence):
@@ -21,8 +22,8 @@ class Client():
     def get_all_preexistence(self):
         return self.preexistence
 
-    def remove_preexistence(self, nPreexistence):
-        self.preexistence.pop(nPreexistence)
+    def remove_preexistence(self, n_preexistence):
+        self.preexistence.pop(n_preexistence)
         return len(self.preexistence) - 1
 
     def get_formatted_name(self):
