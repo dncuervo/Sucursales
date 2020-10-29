@@ -11,8 +11,9 @@ class Client():
         self.preexistence.append(nPreexistence)
         return len(self.preexistence) - 1
     
-    def get_preexistence(self, pIndex):
-        if pIndex >= len(self.preexistence):
+    def get_preexistence(self, p_index):
+        """ Get a preexistence given the index """ 
+        if p_index >= len(self.preexistence):
             return 'There is no such preexistence'
         
         return self.preexistence[pIndex]
